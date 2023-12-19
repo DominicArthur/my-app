@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <h2>Welcome to My App!</h2>
-      <p>This is the home page content.</p>
+      <p>What will you like to view?</p>
       {/* Add more JSX and components specific to the Home page */}
     </div>
   );
