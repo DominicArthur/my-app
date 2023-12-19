@@ -5,8 +5,10 @@ import "./App.css";
 //import Footer from "./Footer";
 import Home from "./roots/Home";
 import Movie from "./roots/Movie";
-//import Shows from "./roots/Shows";
+import Show from "./roots/Show";
+import Library from "./roots/Library";
 import Navbar from './components/Navbar';
+import Shows from "./roots/Show";
 
 // Define the main App component
 function App() {
@@ -19,7 +21,8 @@ function App() {
          {/* Route for all pages */}
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<Movie />} />
-        {/* <Route path="/shows" element={<Shows />}/> */}
+        <Route path="/shows" element={<Show />} />
+        <Route path="/library" element={<Library />} />
       </Routes>
 
     </Router>

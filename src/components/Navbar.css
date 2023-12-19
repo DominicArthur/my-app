@@ -1,0 +1,38 @@
+nav {
+    background-color: #ffffff; /* White background */
+    padding: 10px 0; /* Add some padding at the top and bottom */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow */
+  }
+  
+  /* Navbar list */
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  /* Navbar links */
+  a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    transition: color 0.3s ease; 
+  }
+  
+  /* Navbar link hover effect */
+  a:hover {
+    color: #007bff; 
+  }
+  
