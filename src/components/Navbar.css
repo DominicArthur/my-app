@@ -8,10 +8,10 @@ nav {
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow to give it a cinema vibe */
     
- navbar img {
-        height: 50px; 
-        margin-right: 10px; 
-      }
+ /*navbar img { */
+   /*     height: 50px; */
+    /*    margin-right: 10px; */
+     /* } */
   }  
   /* Navbar list */
   ul {
@@ -41,9 +41,4 @@ nav {
     color: #007bff; 
   }
   
-  .logo{
-    position: absolute;
-    height: auto;
-    left: auto;
-    width: auto;
-  }
+  
