@@ -1,0 +1,16 @@
+
+
+b {
+    background-color: #bb7b7b; 
+    padding: 30px 0; /* Add some padding at the top and bottom */
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow to give it a cinema vibe */
+    
+}
+
+
+  
+

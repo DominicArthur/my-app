@@ -2,7 +2,7 @@ const Shows = () => {
   return (
     <div>
       <h2>Shows Page</h2>
-      <p>This is the Movie page content.</p>
+      <p>This is the Shows page content.</p>
       {/* Add more JSX and components specific to the Movie page */}
     </div>
   );

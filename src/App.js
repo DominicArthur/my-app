@@ -8,7 +8,7 @@ import Movie from "./roots/Movie";
 import Show from "./roots/Show";
 import Library from "./roots/Library";
 import Navbar from './components/Navbar';
-import Shows from "./roots/Show";
+import myImage from './images/What.png';
 
 // Define the main App component
 function App() {
