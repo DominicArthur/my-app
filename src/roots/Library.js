@@ -1,11 +1,11 @@
-const Library = () => {
-    return (
-      <div>
-        <h2>Library Page</h2>
-        <p>This is the Library page content.</p>
-        {/* Add more JSX and components specific to the Movie page */}
-      </div>
-    );
-  };
-  
-  export default Library;
+// Library.js
+
+function Library(){
+    return(
+        <div>
+            <h2>This is your Library</h2>
+        </div>
+    )
+}
+
+export default Library;

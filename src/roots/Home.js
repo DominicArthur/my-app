@@ -1,11 +1,11 @@
-const Home = () => {
-    return (
-      <div>
-        <h2>Home Page</h2>
-        <p>This is the Home page content.</p>
-        {/* Add more JSX and components specific to the Movie page */}
-      </div>
-    );
-  };
-  
-  export default Home;
+// Home.js
+
+function Home(){
+  return(
+    <div>
+      <h2>This is Home page!</h2>
+    </div>
+  );
+}
+
+export default Home;
