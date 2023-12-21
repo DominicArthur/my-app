@@ -16,13 +16,19 @@ function Home() {
     // Prevent the default form submission behavior
     e.preventDefault();
 
-    console.log("Title: "+title+ "Poster: "+poster+ "Director: "+director);
+    console.log("Title:" + title+ 
+    "Poster:"+ poster+ 
+    "Director:"+ director);
 
     const movie = {
       title:title,
       poster:poster,
       director:director
     };
+
+    axios.post('http://localhost:4000/api/movies', movie)
+    .then()
+    .catch();
   }
 
   // JSX structure for the Home component

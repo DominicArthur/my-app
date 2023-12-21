@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Movie from "./Movie";  
+import axios from "axios";
 
 // Functional component for the Movie Information page
 function Info() {
@@ -11,7 +12,7 @@ function Info() {
     
     useEffect(() => {
         // Fetch movie data from IMDb API using axios
-        axios.get('https://search.imdbot.workers.dev/?q=Niram')
+        axios.get('http://localhost:4000/api/movies')
         .then((response) => {
             // Save the fetched movie data in the state variable
             setMovies(response.data.movies);
