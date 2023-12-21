@@ -2,6 +2,7 @@
 
 // Import the 'useState' hook from React
 import { useState } from "react";
+import axios from "axios";
 
 // Functional component for the Home page
 function Home() {
@@ -15,8 +16,13 @@ function Home() {
     // Prevent the default form submission behavior
     e.preventDefault();
 
-    // Log the form input values
-    console.log(title, poster, director);
+    console.log("Title: "+title+ "Poster: "+poster+ "Director: "+director);
+
+    const movie = {
+      title:title,
+      poster:poster,
+      director:director
+    };
   }
 
   // JSX structure for the Home component
