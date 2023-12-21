@@ -41,6 +41,7 @@ import { useState } from "react";
               onChange={(i) => {setDirector(i.target.value) }}
             />
           </div>
+          <input type="submit" value="Add Movie"></input>
       </form>
     </div>
   )
