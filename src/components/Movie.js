@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import FilmItem from "./FilmItem";
 
 function Movie(props) {
-  // useEffect hook to log movies when the component mounts
+  // useEffect hook to log movies 
   useEffect(() => {
     console.log("movies ", props.myMovies);
   }, []);

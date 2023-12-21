@@ -1,35 +1,21 @@
 //info.js
 
-import React from "react";
+import { useEffect, useState } from "react";
 import Movie from "./Movie";
+import axios from "axios"
 
 function Info() {
+    const [movies, setMovies] = useState([]);
 
-    const data = {
-            "books": [
-
-        {
-            "title": "The Lord of the Rings: Fellowship of the Ring",
-            "director": ["Peter Jackson"],
-            "filmLenght": "2 hours and 58 minutes",
-            "thumbnail": "/images/OIP.jpg",
-            "categories": []
-         },
-         {
-            "title": "Fantastic Mr. Fox",
-            "director": ["Wes Anderson"],
-            "filmLenght": "1 hour and 27 minutes",
-            "thumbnail": "/images/jAFvXFcup7pQOyofJlxPr6rcFaa.jpg",
-            "categories": []
-         },
-         {
-            "title": "Jujutsu Kaisen 0",
-            "director": ["Sunghoo Park"],
-            "filmLenght": "1 hour and 52minutes",
-            "thumbnail": "/images/OIP (1).jpg",
-         } 
-    ]
-}
+    useEffect(() => {
+        axios.get('https://search.imdbot.workers.dev/?q=Niram')
+        .then((response) => {
+            setMovies(response.data.movies);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+    }, []);
 
     return(
         <div>
