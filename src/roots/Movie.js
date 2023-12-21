@@ -1,12 +1,13 @@
 // Movie.js
-import React from "react";
-import movieInfo from './MovieInfo'
+
+import { useEffect } from "react";
 
 function Movie(){
-  
-  const data=[
-    
-  ]
+  return(
+    <div>
+        <h2>This is your Movie page</h2>
+    </div>
+  )
 }
 
-export default Movie
+export default Movie;
