@@ -11,19 +11,11 @@ function Movie(props) {
     console.log("movies ", props.myMovies);
   }, []);
 
-  // Check if props.myMovies is an array 
-  if (!Array.isArray(props.myMovies)) {
-    // Log an error if it's not an array
-    console.error("props.myMovies is not an array");
-    // Return null to render nothing in this case
-    return null;
-  }
-
-  const Reload = (i)=>{
+  const Reload = () =>{
     axios.get("http://localhost:4000/api/movies")
     .then(
       (response) =>{
-        SVGMetadataElement(response.data)
+        setData(response.data)
       }
     )
 
