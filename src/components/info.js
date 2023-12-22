@@ -15,7 +15,7 @@ function Info() {
         axios.get('http://localhost:4000/api/movies')
         .then((response) => {
             // Save the fetched movie data in the state variable
-            setMovies(response.data.movies);
+            setMovies(response.data);
         })
         .catch((error) => {
             // Log any errors that occur during the API request
@@ -30,7 +30,7 @@ function Info() {
             <h2>Movie Page</h2>
             
             {/* Render the Movie component and pass the retrieved movie data */}
-            <Movie myMovies={movies}></Movie>
+            <Movie myMovies={data}></Movie>
         </div>
     );
 }

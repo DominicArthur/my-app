@@ -8,6 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Home from "./components/Home";
 import Movie from "./components/Movie";
 import Library from "./components/Library";
+import Edit from "./components/Edit";
 
 // Define the main App component
 function App() {
@@ -18,7 +19,7 @@ function App() {
         {/* Navbar */}
         <Navbar bg="primary" data-bs-theme="dark">
           <Container>
-            <Navbar.Brand href="/">Navbar</Navbar.Brand>
+            <Navbar.Brand href="/">What's Next?</Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/movie">Movies</Nav.Link>
@@ -37,6 +38,9 @@ function App() {
 
           {/* Library route */}
           <Route path='/library' element={<Library />} />
+
+          {/* Edit route */}
+          <Route path ='/edit/:id' element={<Edit></Edit>} />
         </Routes>
       </div>
     </Router>

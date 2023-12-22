@@ -1,8 +1,7 @@
-// Home.js
-
 // Import the 'useState' hook from React
 import { useState } from "react";
 import axios from "axios";
+import './Home.css'; // Import the CSS file
 
 // Functional component for the Home page
 function Home() {
@@ -16,26 +15,26 @@ function Home() {
     // Prevent the default form submission behavior
     e.preventDefault();
 
-    console.log("Title:" + title+ 
-    "Poster:"+ poster+ 
-    "Director:"+ director);
+    console.log("Title:" + title +
+      "Poster:" + poster +
+      "Director:" + director);
 
     const movie = {
-      title:title,
-      poster:poster,
-      director:director
+      title: title,
+      poster: poster,
+      director: director
     };
 
     axios.post('http://localhost:4000/api/movies', movie)
-    .then()
-    .catch();
+      .then()
+      .catch();
   }
 
   // JSX structure for the Home component
   return (
-    <div>
+    <div className="my-form-container">
       {/* Form for adding a new movie */}
-      <form onSubmit={handleSubmit}>
+      <form className="my-form" onSubmit={handleSubmit}>
         {/* Input field for movie title */}
         <div className="my-form-group">
           <label>Movie Title: </label>
@@ -47,7 +46,7 @@ function Home() {
           />
         </div>
         {/* Input field for movie poster */}
-        <div className="my-from-group">
+        <div className="my-form-group">
           <label>Movie Poster: </label>
           <input
             type="text"
